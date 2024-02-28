@@ -1,14 +1,8 @@
-import Image from "next/image";
-import React from "react";
+
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card"
-import { Button } from "@/components/ui/button"
+
  
 export function ThreeDCardDemo() {
-
-  const handleSignUp = () => {
-    
-    window.location.href = "https://example.com";
-  };
 
   return (
     <CardContainer className="inter-var">
