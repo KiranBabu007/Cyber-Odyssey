@@ -8,7 +8,7 @@ import { BackgroundGradientAnimation
 const RedirectComponent = () => {
   const [inputValue, setInputValue] = useState('');
   const [isValidKey, setIsValidKey] = useState(false);
-  const [isWrong,setIsWrong] =useState(true)
+  const [isWrong,setIsWrong] =useState(false)
 
   
   const checkKey = () => {
@@ -17,7 +17,7 @@ const RedirectComponent = () => {
       setIsValidKey(true);
     } else {
       setIsValidKey(false);
-      setIsWrong(false)
+      setIsWrong(true)
       setTimeout(() => {
         setIsWrong(false);
       }, 3000);
@@ -44,18 +44,18 @@ const RedirectComponent = () => {
           Check your Deciphered Code Here to <br className="my-5" /> Enable The Redirection Link
         </h5>
         </div>
-   <div className='flex m-5'>
+   <div className='flex mt-10 gap-10'>
     <Input
-      className='w-100 m-5'
+      className='w-100 '
       type="text"
       value={inputValue}
       onChange={(e) => setInputValue(e.target.value)}/>
       
-      <Button className='m-5' onClick={checkKey}>Check</Button>
-      <Button className='m-5' onClick={redirectToWebsite} disabled={!isValidKey} >Redirect</Button>
+      <Button  onClick={checkKey}>Check</Button>
+      <Button  onClick={redirectToWebsite} disabled={!isValidKey} >Redirect</Button>
     
    </div>
-   {!isWrong && <p className="text-red-500">Wrong key entered. Please try again.</p>} 
+   {isWrong && <p className="text-red-500">Wrong key entered. Please try again.</p>} 
             
       
         </BackgroundGradientAnimation>
