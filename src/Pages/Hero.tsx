@@ -16,7 +16,7 @@ const Hero = () => {
     >
       <div className="header h-screen flex flex-col justify-center items-center items-center text-center  ">
         <h1 className='font-sans text-6xl bg-slate-200 font-extrabold bg-clip-text text-transparent'>Cyber Odyssey</h1>
-        <span className='m-3 text-xl bg-slate-200 font-sans italic bg-clip-text text-transparent' >Journey to the Flag</span>
+        <span className='m-3 text-2xl bg-slate-200 font-sans italic bg-clip-text text-transparent' >Cryptic Prelude</span>
       </div>
     
       
