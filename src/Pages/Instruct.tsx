@@ -1,6 +1,7 @@
 
 import Card from "@/Pages/ThreeDCardDemo"
 
+
 const Instruct = () => {
   return (
     <div className='h-screen flex p-10 space-between'>
