@@ -16,7 +16,11 @@ module.exports = {
   prefix: "",
   theme: {
     fontFamily: {
-      'sans': ['Poppins'],
+      // 'sans': ['Poppins'],
+      'sans': ['ui-sans-serif', 'system-ui', "Poppins"],
+      'serif': ['ui-serif', 'Georgia',],
+      'mono': ['ui-monospace', 'SFMono-Regular', ],
+      'kode-mono': ['"Kode Mono"', 'monospace']
     },
     container: {
       center: true,
