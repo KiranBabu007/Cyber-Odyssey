@@ -1,5 +1,4 @@
-import React from 'react'
-import { Button } from "@/components/ui/button"
+
 import { WavyBackground } from "@/components/ui/wavy-background"
 
 const Hero = () => {
