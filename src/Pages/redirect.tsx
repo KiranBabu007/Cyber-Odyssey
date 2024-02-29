@@ -46,7 +46,7 @@ const RedirectComponent = () => {
         </div>
    <div className='flex mt-10 gap-10'>
     <Input
-      className='w-100 '
+      className='w-100 mb-10 '
       type="text"
       value={inputValue}
       onChange={(e) => setInputValue(e.target.value)}/>
@@ -55,7 +55,7 @@ const RedirectComponent = () => {
       <Button  onClick={redirectToWebsite} disabled={!isValidKey} >Redirect</Button>
     
    </div>
-   {isWrong && <p className="text-red-500">Wrong key entered. Please try again.</p>} 
+   {isWrong && <p className="text-red-500 text-shadow ">Wrong key entered. Please try again.</p>} 
             
       
         </BackgroundGradientAnimation>
