@@ -13,7 +13,7 @@ const RedirectComponent = () => {
 
 
   const checkKey = () => {
-    const validKey = 'S2lyYW4=';
+    const validKey = 'RkVMSUNJVEFaSU9OSQ==';
     if (inputValue === atob(validKey)) {
       setIsValidKey(true);
     } else {
@@ -27,7 +27,7 @@ const RedirectComponent = () => {
 
   const redirectToWebsite = () => {
     if (isValidKey) {
-      const encodedUrl = 'aHR0cHM6Ly9nb29nbGUuY29t';
+      const encodedUrl = 'aHR0cHM6Ly9zaWRoYXJ0aC1tYW5pa3V0dGFuLmdpdGh1Yi5pby9DWUJFUi1PRFlTU0VZLVdFQlNJVEUy';
       const decodedUrl = atob(encodedUrl);
       window.location.href = decodedUrl;
     }
