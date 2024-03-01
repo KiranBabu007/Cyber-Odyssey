@@ -5,8 +5,9 @@ import Card from "@/Pages/ThreeDCardDemo"
 const Instruct = () => {
   return (
     <div className='h-auto flex p-10 space-between bg-white'>
-      <section className='w-[100vh]  mx-10 mt-10'>
+      <section className='w-[100vh]  mx-10 mt-10 text-white'>
         <h1 className="text-black text-4xl font-extrabold">Instructions</h1>
+        
         <ul className="  font-kode-mono my-10 list-disc [&>li]:mt-4 text-black text-4sm ">
           <li>Unravel the double-layer encrypted flag using your cryptographic prowess.</li>
           <li>Hone your decoding skills by effectively using Rumkin's diverse cipher tools.</li>
