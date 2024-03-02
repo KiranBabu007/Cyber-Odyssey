@@ -16,7 +16,7 @@ interface ParallaxProps {
     baseVelocity: number;
 }
 
-export function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
+export function ParallaxText({ baseVelocity = 100 }: ParallaxProps) {
     const baseX = useMotionValue(0);
     const { scrollY } = useScroll();
     const scrollVelocity = useVelocity(scrollY);
@@ -36,7 +36,7 @@ export function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
     const x = useTransform(baseX, (v) => `${wrap(2, -10, v)}%`);
 
     const directionFactor = useRef<number>(1);
-    useAnimationFrame((t, delta) => {
+    useAnimationFrame((delta) => {
         let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
         if (velocityFactor.get() < 0) {

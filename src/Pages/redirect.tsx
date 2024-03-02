@@ -45,7 +45,7 @@ const RedirectComponent = () => {
             Check your Deciphered Code Here to <br className="my-5" /> Enable The Redirection Link
           </h5>
         </div>
-        <div className='flex mt-10 gap-10 z-50'>
+        <div className='flex mt-10 gap-10 z-50 mb-20'>
           <Input
             className='w-100 mb-10 '
             type="text"
@@ -58,6 +58,7 @@ const RedirectComponent = () => {
         </div>
         {isWrong && <p className="text-red-500 font-sans font-bold ">Wrong key entered. Please try again.</p>}
 
+        <p className='text-white text-end opacity-35 font-kode-mono mt-[10]' >Website by Kiran</p>
 
       </BackgroundGradientAnimation>
 
