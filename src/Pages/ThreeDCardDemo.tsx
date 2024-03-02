@@ -1,7 +1,7 @@
 
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card"
 
- 
+
 export function ThreeDCardDemo() {
 
   return (
@@ -11,7 +11,7 @@ export function ThreeDCardDemo() {
           translateZ="50"
           className="text-xl font-bold text-neutral-600 dark:text-white"
         >Go to Rumkin to decipher your code
-          
+
         </CardItem>
         <CardItem
           as="p"
@@ -21,22 +21,22 @@ export function ThreeDCardDemo() {
           Good Luck Deciphering !
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-        <img
-        src="https://wallpaperaccess.com/full/2407073.jpg"
-        height="1000"
-        width="1000"
-        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-        alt="thumbnail"
-      />
+          <img
+            src="https://wallpaperaccess.com/full/2407073.jpg"
+            height="1000"
+            width="1000"
+            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            alt="thumbnail"
+          />
         </CardItem>
         <div className="flex justify-between items-center mt-20">
-          
+
           <CardItem
             translateZ={20}
             as="button"
             className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
           >
-             <a href="https://rumkin.com/tools/cipher/">Click Here</a>
+            <a href="https://rumkin.com/tools/cipher/" target="_blank" rel="noopener noreferrer">Click Here</a>
           </CardItem>
         </div>
       </CardBody>
